@@ -1,0 +1,7 @@
+model_type: logistic_regression
+model_params:
+  solver: lbfgs
+  max_iter: 100
+  C: 1.0
+model_save_path: artifacts/trained_models/logistic_regression_model.pkl
+evaluation_save_path: artifacts/model_evaluations/logistic_regression_evaluation.json

@@ -1,0 +1,8 @@
+model_type: random_forest
+model_params:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 2
+  min_samples_leaf: 1
+model_save_path: artifacts/trained_models/random_forest_model.pkl
+evaluation_save_path: artifacts/model_evaluations/random_forest_evaluation.json

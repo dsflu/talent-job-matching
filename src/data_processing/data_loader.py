@@ -69,3 +69,30 @@ class JSONDataLoader(BaseDataLoader):
         except Exception as e:
             log.error(f"Error converting data to DataFrame: {e}")
             return None
+        
+class CSVDataLoader(BaseDataLoader):
+    """
+    Data loader for CSV files.
+    """
+    
+    def load_data(self) -> None:
+        """
+        Loads data from a CSV file.
+        """
+        try:
+            self.data = pd.read_csv(self.file_path)
+            log.info("CSV data loaded.")
+        except Exception as e:
+            log.error(f"Error loading CSV data: {e}")
+    
+    def to_pandas(self) -> Optional[pd.DataFrame]:
+        """
+        Converts the loaded CSV data to a Pandas DataFrame.
+        
+        Returns:
+            Optional[pd.DataFrame]: The loaded Pandas DataFrame, or None.
+        """
+        if self.data is None:
+            log.warning("Data not loaded. Please call load_data() first.")
+            return None
+        return self.data

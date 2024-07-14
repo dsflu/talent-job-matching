@@ -1,0 +1,3 @@
+model_type: rule_based
+model_save_path: artifacts/trained_models/rule_based_model.pkl
+evaluation_save_path: artifacts/model_evaluations/rule_based_evaluation.json
