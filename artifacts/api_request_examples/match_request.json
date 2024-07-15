@@ -1,0 +1,30 @@
+{
+  "talent": {
+    "talent_id": "talent_1",
+    "languages": [
+      {"rating": "C2", "title": "German"},
+      {"rating": "B2", "title": "English"},
+      {"rating": "B1", "title": "French"}
+    ],
+    "job_roles": [
+      "business-analyst",
+      "marketing-team-lead",
+      "customer-success-manager",
+      "business-development-manager",
+      "copywriter"
+    ],
+    "seniority": "senior",
+    "salary_expectation": 45000,
+    "degree": "apprenticeship"
+  },
+  "job": {
+    "job_id": "job_1",
+    "languages": [
+      {"title": "German", "rating": "C1", "must_have": true}
+    ],
+    "job_roles": ["customer-success-manager"],
+    "seniorities": ["none", "junior", "midlevel", "senior"],
+    "max_salary": 50000,
+    "min_degree": "apprenticeship"
+  }
+}
