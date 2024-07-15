@@ -119,7 +119,7 @@ class Search:
 
     def rank_and_filter(self, talent: dict, jobs: list[dict], criteria: dict[str, Any]) -> list[dict]:
         """
-        Rank and filter job opportunities for a given talent based on model predictions and specified criteria.
+        Rank and filter job opportunities for a given talent based on model predictions and specified filtering criteria.
 
         Args:
             talent: Talent data dict.
