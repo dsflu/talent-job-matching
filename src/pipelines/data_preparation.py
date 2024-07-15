@@ -24,8 +24,8 @@ def prepare_data(config_path: str) -> None:
     log.info(f"Loading data from {raw_data_path}")
     json_data_loader = JSONDataLoader(raw_data_path)
     json_data_loader.load_data()
-    log.info(f"Converting it to pandas")
     log.info("Data loaded successfully")
+    log.info(f"Converting it to pandas")
     raw_data_df = json_data_loader.to_pandas()
     
     if raw_data_df is not None:

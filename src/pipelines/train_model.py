@@ -1,3 +1,6 @@
+"""
+This pipeline defines how we train and save the models.
+"""
 import os
 import joblib
 from src.models.logistic_regression_model import LogisticRegressionModel

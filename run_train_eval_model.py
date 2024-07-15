@@ -1,3 +1,6 @@
+"""
+This script runs the model training and evaluation.
+"""
 from src.pipelines.train_model import train_model
 from src.pipelines.eval_model import evaluate_model
 

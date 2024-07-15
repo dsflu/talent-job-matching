@@ -30,5 +30,5 @@ class RuleBasedModel:
         """
         Predict the probabilities. The rule-based model only outputs 0 or 1, so the probabilities are binary.
         """
-        probas = self.predict(X)
-        return pd.DataFrame({'0': 1 - probas, '1': probas}).to_numpy()
+        proba = self.predict(X)
+        return pd.DataFrame({'0': 1 - proba, '1': proba}).to_numpy()

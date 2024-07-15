@@ -1,3 +1,6 @@
+"""
+This pipeline defines how we evaluate the trained models.
+"""
 import os
 import json
 import joblib
